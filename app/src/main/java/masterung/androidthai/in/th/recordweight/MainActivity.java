@@ -1,5 +1,6 @@
 package masterung.androidthai.in.th.recordweight;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -17,11 +18,17 @@ public class MainActivity extends AppCompatActivity {
         myManager = new MyManager(MainActivity.this);
 
 //        Test Add User
-        myManager.addValueToUserTABLE("nick", "start",
-                "weight", "height", "gender",
-                "age");
+        testAddUser();
+
+//        DeleteUser
 
 
     }   // Main Method
+
+    private void testAddUser() {
+        myManager.addValueToUserTABLE("nick", "start",
+                "weight", "height", "gender",
+                "age");
+    }
 
 }   // Main Class
