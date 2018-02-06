@@ -24,6 +24,7 @@ public class MyManager {
     }   // Constructor
 
     //    Add Value to userTABLE
+
     public long addValueToUserTABLE(String nickNameString,
                                     String startAppString,
                                     String weightString,
